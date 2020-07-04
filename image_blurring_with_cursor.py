@@ -11,7 +11,6 @@ def draw_eraser(event,x,y,flags,param):
     global abc
     if event == cv2.EVENT_LBUTTONDOWN:
         abc = True
-        #cv2.circle(img,(x,y),30,(255,255,255),-1)
     elif event == cv2.EVENT_MOUSEMOVE:
         if abc == True:
            blur = img[y:y+30,x:x+30]
